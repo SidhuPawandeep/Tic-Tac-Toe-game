@@ -1,0 +1,174 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorYellow1"
+    tools:context="com.example.lenovo.TicTacToe.MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_58dp"
+        android:background="@color/colorINDIANRED"
+        android:minHeight="?attr/actionBarSize"
+        android:titleTextColor="@color/colorWhite" />
+
+    <LinearLayout
+        android:id="@+id/first"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/size_10dp">
+
+        <TableLayout
+            android:id="@+id/gameTL"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center"
+            android:clickable="true"
+            android:gravity="center"
+            android:nestedScrollingEnabled="false"
+            android:padding="10dp">
+
+            <TableRow
+                android:id="@+id/row0"
+                style="@style/TableRow">
+
+                <TextView
+                    style="@style/LeftCell"
+                    android:layout_column="0">
+
+                </TextView>
+
+                <TextView
+                    style="@style/MiddleCell"
+                    android:layout_column="1">
+
+                </TextView>
+
+                <TextView
+                    style="@style/RightCell"
+                    android:layout_column="2">
+
+                </TextView>
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/row1"
+                style="@style/TableRow">
+
+                <TextView
+                    style="@style/LeftCell"
+                    android:layout_column="0">
+
+                </TextView>
+
+                <TextView
+                    style="@style/MiddleCell"
+                    android:layout_column="1">
+
+                </TextView>
+
+                <TextView
+                    style="@style/RightCell"
+                    android:layout_column="2">
+
+                </TextView>
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/row2"
+                style="@style/TableRow">
+
+                <TextView
+                    style="@style/LeftCell"
+                    android:layout_column="0">
+
+                </TextView>
+
+                <TextView
+                    style="@style/MiddleCell"
+                    android:layout_column="1">
+
+                </TextView>
+
+                <TextView
+                    style="@style/RightCell"
+                    android:layout_column="2">
+
+                </TextView>
+
+            </TableRow>
+
+        </TableLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/second"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_below="@+id/first"
+        android:padding="@dimen/size_10sp">
+
+        <TextView
+            android:id="@+id/turnTV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:padding="10dp"
+            android:text="Turn: "
+            android:textColor="@color/colorINDIANRED"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/third"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@color/colorYellow1"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/size_20sp"
+        android:weightSum="2"
+        android:layout_marginRight="@dimen/size_10dp"
+        android:layout_marginLeft="@dimen/size_10dp"
+        android:paddingTop="@dimen/size_18sp">
+
+        <Button
+            android:id="@+id/resetBT"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:background="@color/colorINDIANRED"
+            android:padding="4dp"
+            android:text="Reset Match"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/size_18sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/existBT"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginLeft="2dp"
+            android:background="@color/colorINDIANRED"
+            android:text="Exist"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/size_18sp"
+            android:textStyle="bold"
+
+
+            />
+    </LinearLayout>
+</RelativeLayout>

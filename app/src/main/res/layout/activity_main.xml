@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lenovo.TicTacToe.MainActivity"
+    android:background="@color/colorYellow1">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_58dp"
+        android:background="@color/colorYellow1"
+        android:minHeight="?attr/actionBarSize"
+        android:titleTextColor="@color/colorWhite"/>
+    <LinearLayout
+        android:id="@+id/first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/size_10dp"
+        android:layout_below="@+id/toolbar"
+        android:gravity="center">
+        <LinearLayout
+            android:id="@+id/first_first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+            <Button
+                android:id="@+id/firstBT"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@color/colorINDIANRED"
+
+                />
+            <Button
+                android:id="@+id/secondBT"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@color/colorINDIANRED"
+                android:layout_marginLeft="2dp"
+
+                />
+            <Button
+                android:id="@+id/thirdBT"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@color/colorINDIANRED"
+                android:layout_marginLeft="2dp"
+
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/first_second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:paddingTop="2dp"
+            >
+            <Button
+                android:id="@+id/fourthBT"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@color/colorINDIANRED"
+
+                />
+            <Button
+                android:id="@+id/fivethBT"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@color/colorINDIANRED"
+                android:layout_marginLeft="2dp"
+
+                />
+            <Button
+                android:id="@+id/sixBT"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@color/colorINDIANRED"
+                android:layout_marginLeft="2dp"
+
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/first_third"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:paddingTop="2sp">
+            <Button
+                android:id="@+id/sevethBT"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@color/colorINDIANRED"
+
+                />
+            <Button
+                android:id="@+id/eighthBT"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@color/colorINDIANRED"
+                android:layout_marginLeft="2dp"
+
+                />
+            <Button
+                android:id="@+id/ninethBT"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:background="@color/colorINDIANRED"
+                android:layout_marginLeft="2dp"
+
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/first_fourth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:paddingTop="30dp"
+            android:background="@color/colorYellow1"
+            android:layout_marginLeft="@dimen/size_18sp">
+            <TextView
+                android:id="@+id/firstTV"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+               android:text="Player1 Wins"
+                android:textStyle="bold"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/size_18sp"
+                />
+            <TextView
+                android:id="@+id/secondTV"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Computer Wins"
+                android:textStyle="bold"
+                android:textColor="@color/colorINDIANRED"
+                android:textSize="@dimen/size_18sp"
+                android:layout_marginLeft="10dp"
+
+                />
+            <TextView
+                android:id="@+id/thirdTV"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Draw"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/size_18sp"
+                android:layout_marginLeft="10dp"
+
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/first_fivth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:paddingTop="10dp"
+            android:background="@color/colorYellow1"
+            android:layout_marginLeft="@dimen/size_18sp">
+            <TextView
+                android:id="@+id/getfirstTV"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textStyle="bold"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/size_18sp"
+                />
+            <TextView
+                android:id="@+id/getsecondTV"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textStyle="bold"
+                android:textColor="@color/colorINDIANRED"
+                android:textSize="@dimen/size_18sp"
+                android:layout_marginLeft="10dp"
+
+                />
+            <TextView
+                android:id="@+id/getthirdTV"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/size_18sp"
+                android:layout_marginLeft="10dp"
+
+                />
+
+        </LinearLayout>
+
+
+        </LinearLayout>
+    <LinearLayout
+        android:id="@+id/last"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:paddingTop="@dimen/size_18sp"
+        android:background="@color/colorYellow1"
+        android:layout_below="@+id/first"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="@dimen/size_10sp"
+        android:layout_alignParentRight="true"
+        android:paddingRight="35dp">
+
+
+    <Button
+        android:id="@+id/existBT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Exist"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/size_18sp"
+        android:background="@color/colorINDIANRED"
+        android:layout_gravity="right"
+
+
+        /></LinearLayout>
+
+
+</RelativeLayout>

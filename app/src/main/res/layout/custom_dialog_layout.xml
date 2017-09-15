@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_58dp"
+        android:background="@color/colorYellow2"
+        android:minHeight="?attr/actionBarSize"
+        android:titleTextColor="@color/colorWhite"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/size_20dp">
+            <TextView
+                android:id="@+id/dialog_texttoalAmountTv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:text="Do you want to Exist?"
+                android:layout_gravity="center"
+                android:textColor="@color/colorHint"
+                android:textSize="@dimen/size_20dp"/>
+
+            />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/dialogbts1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/size_20sp"
+            android:layout_gravity="center"
+            android:layout_alignParentBottom="false"
+            android:background="@color/colorLightRed"
+            android:layout_below="@+id/first"
+            android:weightSum="10">
+            <Button
+                android:id="@+id/dialogButtonYes1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dialog_text"
+                android:layout_alignLeft="@+id/dialogButtonNo"
+                android:background="@color/colorINDIANRED"
+                android:textColor="@color/colorWhite"
+                android:text="Yes"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_weight="5"/>
+            <Button
+                android:id="@+id/dialogButtonNo1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dialog_text"
+                android:layout_alignRight="@+id/dialogButtonYes"
+                android:layout_marginLeft="2sp"
+                android:background="@color/colorINDIANRED"
+                android:text="NO"
+                android:gravity="center"
+                android:layout_weight="5"/></LinearLayout>
+
+
+    </RelativeLayout>
+</LinearLayout>
+
+
